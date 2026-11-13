@@ -1,13 +1,13 @@
 import unittest
-def add(a, b):
-  return a+b
+def div(a, b):
+  return a/b
 def subtract(a,b):
   return a-b
 def multiply(a,b):
   return a*b
 
 class TestCalculator(unittest.TestCase):
-  def test_add(self):
+  def test_div(self):
     self.assertEqual(add(20,20), 40)
   def test_subtract(self):
     self.assertEqual(subtract(20,10), 10)
@@ -16,7 +16,7 @@ class TestCalculator(unittest.TestCase):
 
 if __name__ == "__main__":
   print("Student cal appl")
-  print("Addition:", add(20,20))
+  print("Addition:", div(20,20))
   print("Subtraction :", subtract(20, 10))
   print("Multiplication :", multiply(5,4))
 
